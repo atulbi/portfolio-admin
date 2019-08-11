@@ -66,3 +66,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+# TO-Do
+- Fix New Line bug on Job Page.
+- Fix Page height on Ability and Achievement page. Similar to what we have done in Job Page.

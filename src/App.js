@@ -1,24 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Tab } from 'semantic-ui-react';
+
+// Tabs
+import Ability from "./Tabs/Ability";
+import Achievement from "./Tabs/Achievement";
+import Job from "./Tabs/Job";
+import Project from "./Tabs/Project";
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Admin panel for portfolio</h1>
+      <Tab panes={
+        [
+          { menuItem: 'Ability', render: () => <Ability/> },
+          { menuItem: 'Achievement', render: () => <Achievement/> },
+          { menuItem: 'Job', render: () => <Job/> },
+          { menuItem: 'Project', render: () => <Project/> }
+        ]
+      }
+        renderActiveOnly={true}
+      />
     </div>
   );
 }
