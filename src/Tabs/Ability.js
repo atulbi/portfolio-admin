@@ -26,8 +26,6 @@ const Ability = (props) => {
         });
     }, [shouldDataUpdate]);
 
-
-
     const onChangeHandler = (event, type, index) => {
         const currState = { ...data };
         if (event.target.type === "text") {
